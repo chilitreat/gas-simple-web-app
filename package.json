@@ -1,0 +1,26 @@
+{
+  "name": "gas-simple-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "node esbuild.js",
+    "push": "clasp push",
+    "open": "clasp open --webapp",
+    "deploy": "pnpm run build && pnpm run push && clasp deploy",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.5.0",
+    "@types/google-apps-script": "^1.0.97",
+    "clasp": "^1.0.0",
+    "esbuild": "^0.25.0",
+    "esbuild-gas-plugin": "^0.8.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}
