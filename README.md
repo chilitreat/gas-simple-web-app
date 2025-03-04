@@ -24,6 +24,4 @@ Template repository for creating simple web apps in GAS
 4. Write your code in `src` directory
 5. mkdir dist && mv appsscript.json.example dist/appsscript.json
 6. pnpm run deploy
-7. pnpm run open
-8. Create a new deployment on GAS editor
-9. Done!
+7. pnpm run open (select @HEAD)
